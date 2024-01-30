@@ -1,5 +1,11 @@
+"use client";
+
+import useTranslation from "@/hooks/useTranslation";
+
 const Home = () => {
-  return <div>hello world</div>;
+  const { t } = useTranslation();
+
+  return <div>{t("title")}</div>;
 };
 
 export default Home;
